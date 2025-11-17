@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" id="meta-description" content="__OG_DESCRIPTION__" />
+    <meta name="keywords" id="meta-keywords" content="" />
+    <meta name="google-site-verification" content="ZdVxVB_sRx2JdGvC53_Ywjv6beLqIBqbMx4eZ6Py2Vw" />
+    <meta name="facebook-domain-verification" content="cpgb9mn702jup46jxwt0wctt81l2d8" />
+
+    <!-- Meta Pixel Base Code -->
+    <script>
+      const initPixel = () => {
+        !(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})
+        (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','678898428140228');
+        fbq('track','PageView');
+      };
+      window.addEventListener('load', initPixel);
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=678898428140228&ev=PageView&noscript=1"/></noscript>
+
+    <title>__OG_TITLE__</title>
+    
+    <script>
+      // Immediately replace the title to prevent placeholder flicker on client-side render.
+      if (document.title === '__OG_TITLE__') {
+        document.title = 'Powerful Tools';
+      }
+    </script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" id="og-url" content="__OG_URL__">
+    <meta property="og:title" id="og-title" content="__OG_TITLE__">
+    <meta property="og:description" id="og-description" content="__OG_DESCRIPTION__">
+    <meta property="og:image" id="og-image" content="__OG_IMAGE__">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" id="twitter-url" content="__OG_URL__">
+    <meta name="twitter:title" id="twitter-title" content="__OG_TITLE__">
+    <meta name="twitter:description" id="twitter-description" content="__OG_DESCRIPTION__">
+    <meta name="twitter:image" id="twitter-image" content="__OG_IMAGE__">
+    
+    <!-- __PRELOAD_TAGS__ -->
+
+    <link rel="canonical" id="canonical-url" href="__CANONICAL_URL__" />
+    <link id="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20viewBox%3D%270%200%2024%27%20fill%3D%27none%27%20stroke%3D%27%232563EB%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M5.5%208.5%209%2012l-3.5%203.5L2%2012l3.5-3.5Z%27/%3E%3Cpath%20d%3D%27m12%202%203.5%203.5L12%209%208.5%205.5%2012%202Z%27/%3E%3Cpath%20d%3D%27M18.5%208.5%2022%2012l-3.5%203.5L15%2012l3.5-3.5Z%27/%3E%3Cpath%20d%3D%27m12%2015%203.5%203.5L12%2022l-3.5-3.5L12%2015Z%27/%3E%3C/svg%3E">
+    
+    <!-- CSS fixes and overrides -->
+    <style>
+      :root {
+        color-scheme: light !important;
+        --color-primary: #1e1b4b; /* Deep Indigo / Navy */
+        --color-accent: #f97316; /* Warm Orange/Gold for CTA */
+        --color-warm-bg: #fffbeb; /* Light Amber/Beige for Content Boxes */
+      }
+      
+      /* Set the base font size to scale the entire UI down to 85% */
+      html {
+        font-size: 85%;
+        scroll-behavior: smooth;
+      }
+      
+      /* Prevent unintentional text selection during clicks and drags */
+      body {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* IE/Edge */
+        user-select: none;         /* Standard */
+      }
+
+      /* Add padding-top to body when offline to account for banner */
+      body.is-offline {
+        padding-top: 2rem; /* 32px, height of the offline banner */
+      }
+
+      /* Re-enable selection for elements where it's desirable */
+      input,
+      textarea,
+      [contenteditable="true"],
+      pre,
+      code,
+      .prose, .prose *, /* For markdown content in info pages */
+      td, th             /* For table data */
+      {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+      }
+      
+      /* Custom styles for Consultant & Landing Pages */
+      .cta-button {
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(249, 115, 22, 0.5);
+      }
+      .cta-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(249, 115, 22, 0.7);
+      }
+      .section-heading {
+          /* Color is now handled by Tailwind utility classes */
+          font-weight: 800;
+          text-align: center;
+      }
+      .package-card-premium {
+          transition: all 0.3s ease;
+          transform: scale(1.05);
+          box-shadow: 0 10px 30px rgba(30, 27, 75, 0.2);
+          /* Border color is now handled by Tailwind utility classes */
+          background-color: #ffffff;
+      }
+      .package-card-premium:hover {
+          transform: scale(1.06);
+      }
+      .app-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .app-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      /* Styling for the Vastu Assistant Hero section for visual appeal */
+        .assistant-hero-bg {
+            background-color: #1e1b4b; /* Deep Indigo background */
+        }
+        .assistant-hero-title-text {
+            color: #f97316; /* Orange/Gold accent for the tool name */
+        }
+        .assistant-svg-outline {
+            stroke: #FBBF24; /* Yellow/Amber outline */
+        }
+        .assistant-svg-fill {
+             fill: #FBBF24; /* Yellow/Amber fill */
+        }
+        .assistant-svg-inner {
+            stroke: #FBBF24; /* Yellow/Amber stroke for compass lines */
+            fill: rgba(251, 191, 36, 0.2); /* Semi-transparent yellow fill */
+        }
+        .blog-carousel-container {
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+        }
+        .blog-carousel-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+    </style>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--color-primary)',
+                        accent: 'var(--color-accent)',
+                        warm: 'var(--color-warm-bg)',
+                    },
+                }
+            }
+        }
+    </script>
+
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.4.0/",
+    "crypto": "https://aistudiocdn.com/crypto@^1.0.1",
+    "axios": "https://aistudiocdn.com/axios@^1.12.2",
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^5.0.2",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.546.0",
+    "nodemailer": "https://aistudiocdn.com/nodemailer@^7.0.9",
+    "buffer": "https://aistudiocdn.com/buffer@^6.0.3",
+    "qrcode.react": "https://aistudiocdn.com/qrcode.react@^4.2.0",
+    "firebase-admin": "https://aistudiocdn.com/firebase-admin@^13.5.0",
+    "firebase-functions/": "https://aistudiocdn.com/firebase-functions@^6.5.0/",
+    "googleapis": "https://aistudiocdn.com/googleapis@^164.0.0",
+    "razorpay": "https://aistudiocdn.com/razorpay@^2.9.6"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/dist/bundle.js"></script>
+</body>
+</html>
